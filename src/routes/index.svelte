@@ -2,6 +2,15 @@
     import Greeting from "$lib/Greeting.svelte";
     import Entry from "$lib/Entry.svelte ";
     import EntryModal from "$lib/EntryModal.svelte";
+      import supabase from '$lib/db';
+    async function loginUser() {
+   	 const { error } = await supabase.auth.signIn({
+   		 email
+   	 });
+
+   	 if (error) alert(error.message); // alert if error
+    }
+
 </script>
 
 <Greeting />
