@@ -1,8 +1,7 @@
 <script>
 
-
     import Greeting from "$lib/Greeting.svelte";
-    import Entry from "$lib/Entry.svelte ";
+    import Entry from "$lib/Entry.svelte";
     import EntryModal from "$lib/EntryModal.svelte";
     import supabase from '$lib/db';
 
